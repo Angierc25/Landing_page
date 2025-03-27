@@ -44,8 +44,54 @@ nav {
 
 .nav-links li a{
     text-decoration: none;
-    text-decoration: none;
     color: black;
     font-size: 20px;
             
+}
+.compra-ya{
+    display: flex;
+    align-items: center; 
+    background-color: yellow; 
+    padding: 5px;
+    gap: 10px;
+    border-radius: 5px;
+    border: 1px solid black; 
+}
+.compra-ya a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.wattpas img {
+    width: 30px;
+    height: 30px;
+}
+
+.bake {
+    display: flex;
+    justify-content: center; 
+   
+    background-color: white; 
+    max-width: 1300px;
+    height: 300px; 
+    margin: 0 auto; 
+   
+    border-radius: 70px; 
+   
+    
+}
+
+.cookies {
+    align-self: flex-start; 
+       
+}
+
+.cookies h1 {
+    text-align: right; 
+    font-size: 150px;
+    
+    color: #46260b;
+    margin: 0;
+    padding: 0; 
+   
 }
