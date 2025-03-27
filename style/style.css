@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anton SC", sans-serif;
+}
+
+body {
+    background-color: #f5ebe3;
+}
+
+header{
+    padding: 20px 40px;
+    max-width: 1300px; 
+    width: 90%; 
+    margin: 0 auto;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    gap: 55px; 
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 55px;
+    font-size: 15px;
+}
+.texto-logo a{
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.texto-logo span {
+    color: orange; 
+    font-size: 30px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+            
+}
