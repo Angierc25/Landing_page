@@ -67,31 +67,58 @@ nav {
     height: 30px;
 }
 
+
+
 .bake {
     display: flex;
-    justify-content: center; 
-   
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
     background-color: white; 
+    justify-content: space-between;
     max-width: 1300px;
-    height: 300px; 
+    height: 550px; 
     margin: 0 auto; 
-   
     border-radius: 70px; 
-   
-    
+    padding: 20px; /* Añade un poco de espacio interno */
 }
-
-.cookies {
-    align-self: flex-start; 
-       
-}
-
 .cookies h1 {
-    text-align: right; 
-    font-size: 150px;
-    
+    text-align: center; 
+    font-size: 150px;  
     color: #46260b;
     margin: 0;
-    padding: 0; 
-   
+    padding: 0;  
+}
+
+.texto-container {
+    flex: 1;
+    margin-right: 890px;
+}
+
+.panes-artesanales p {
+    font-size: 28px; 
+    color: #46260b;
+    text-align: justify;
+}
+.Definicion {
+    margin-top: 20px;
+}
+.Definicion p {
+    font-size: 20px; /* Ajusta el tamaño de la letra */
+    font-family: sans-serif; /* Aplica la fuente sans-serif */
+    color: #46260b;
+    text-align: justify;
+}
+.ordenes{
+    margin-top: 40px;
+}
+.order-button {
+    background-color: yellow;
+    text-decoration: none;
+    color: black;
+    border-radius: 50px;
+    padding: 5px 15px;
+    font-size: 18px;
+    border: 1px solid black; 
+    
+    
 }
