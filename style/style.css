@@ -109,16 +109,27 @@ nav {
     text-align: justify;
 }
 .ordenes{
+    
     margin-top: 40px;
 }
 .order-button {
+    
     background-color: yellow;
     text-decoration: none;
     color: black;
     border-radius: 50px;
     padding: 5px 15px;
     font-size: 18px;
-    border: 1px solid black; 
-    
-    
+    border: 1px solid black;  
+}
+.panecito{
+    display: inline-block;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 650px;
+
+}
+.panecito img {
+    width: 490px; /* Ajusta según lo grande que la necesites */
+    height: auto;
 }
