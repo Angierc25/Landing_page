@@ -140,7 +140,8 @@ nav {
     align-items: center;
     margin: 0 auto; 
     max-width: 1100px; 
-    margin-top: 70px;
+    margin-top: 65px;
+    margin-left: 445px;
 }
 .texto-contenedores{
     display: flex;
@@ -152,7 +153,7 @@ nav {
 }
 .unica-texto h2{
     margin-left: 70px;
-    margin-top: -175px;
+    margin-top: 80px;
     font-family: "Anton", sans-serif; 
     font-weight: 900; /* Negrita */
     font-size: 50px;
@@ -163,8 +164,12 @@ nav {
        -1px -1px 0 currentColor;
 }
 .articulo-destacado p{
-    font-family:  sans-serif; 
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: "Comic Neue";
     margin-left: 70px;
+    font-weight: 1000;
+    text-shadow: 0.8px 0px 0px black, -0.8px -0px 0px black; 
     
 }
 .galletita-cost{
@@ -175,4 +180,54 @@ nav {
 .galletita-cost img {
     width: 90px; /* Ajusta según el tamaño deseado */
     height: auto; /* Mantiene la proporción */
+}
+.trio-pancillo {
+    display: flex; /* Alinea los elementos en una fila */
+    align-items: center; /* Centra verticalmente */
+    gap: 15px; /* Espacio entre la imagen y el texto */
+}
+
+.pan-bagel img {
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 160px; /* Ajusta según el tamaño deseado */
+    height: auto; /* Mantiene la proporción */
+}
+.Bagel-pan h3 {
+    font-size: 25px; /* Tamaño del texto */
+    font-weight: 900; /* Negrita opcional */
+    font-family: "Anton", sans-serif; 
+    flex-direction: column;
+}
+
+.Bagel-pan p{
+    margin-top: 5px;
+    font-family:  sans-serif; 
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.raya {
+    margin-left: 20px; /* Agrega espacio entre el texto y la raya */  
+}
+.raya p {
+    font-size: 25px;
+}
+.costo-bagel{
+    margin-left: 20px;
+}
+.costo-bagel p{
+    color: #734611;
+    font-family: "Anton", sans-serif; 
+    font-size: 30px; 
+    font-weight: 900;
+}
+.Concepto-babe{
+    margin-left: 70px;
+    margin-top: 25px;
+}
+.Concepto-babe p{
+    font-family: "Comic Neue";
+    font-size: 20px;
+    font-weight: bold;
 }
