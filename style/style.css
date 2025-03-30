@@ -255,3 +255,22 @@ nav {
     height: 100%; /* Ajusta según la imagen */
     width: 40%;
 }
+.Descption{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    max-width: 480px; /* Límite máximo de ancho */
+    margin-top: 10px;
+    cursor: default;
+}
+.Nombre-panes h4{
+    color: rgb(24, 24, 24);
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800; /* Negrita */
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1;
+
+}
