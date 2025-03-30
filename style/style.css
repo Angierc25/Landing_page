@@ -88,6 +88,12 @@ nav {
     margin: 0;
     padding: 0;  
 }
+.cookies h1:hover {
+    color: #46260b;
+    text-shadow: 0 0 15px rgba(211, 185, 40, 0.7), 0 0 30px rgba(208, 211, 46, 0.4);
+    
+    
+}
 
 .texto-container {
     flex: 1;
