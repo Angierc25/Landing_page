@@ -232,45 +232,69 @@ nav {
 
 
 
-.contenedor3{
+.contenedor3 {
     display: flex;
     justify-content: space-between; /* Espaciado uniforme */
-    gap: 0px; /* Espacio entre productos */
+    gap: 20px; /* Espacio entre productos */
     padding: 20px;
     margin: 0 auto; /* Centra el contenedor horizontalmente */
-    margin-top: 60px; /* Margen superior */
-    max-width: 1340px; /
+    margin-top: 30px; /* Margen superior */
+    max-width: 1340px; /* Límite máximo de ancho */
 }
-.product-panes {
+
+.Productos-panes {
     border-radius: 15px; /* Bordes redondeados */
     text-align: center;
-    width: 40%; /* Para que tres productos entren en una fila */
-    height: 500px;
-  }
-.Imagenes-panes{
+    width: 30%; /* Tamaño más adecuado para 3 productos */
+    height: auto; /* Ajuste dinámico */
+}
+
+.Imagenes-panes {
     transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%; /* Ajusta según la imagen */
-    width: 40%;
+    height: auto; /* Ajusta según la imagen */
+    width: 100%;
 }
-.Descption{
+
+.Imagenes-panes img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Imagenes-panes:hover {
+    transform: scale(1.04); /* Efecto de aumento al pasar el mouse */
+    filter: brightness(1.1);
+}
+
+.Descption {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Alinea el nombre y el precio */
     align-items: center;
     font-family: Arial, sans-serif;
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    max-width: 480px; /* Límite máximo de ancho */
-    margin-top: 10px;
+    max-width: 380px; /* Límite máximo de ancho */
+    margin: 10px auto 0 auto; /* Centra el contenedor horizontalmente */
     cursor: default;
+    margin-top: 20px;
 }
-.Nombre-panes h4{
+
+.Nombre-panes h4 {
     color: rgb(24, 24, 24);
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 800; /* Negrita */
     font-style: normal;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1;
+}
 
+.Precio-panes h4 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800; /* Negrita */
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1;
+    color: #8b4227bb; /* Color naranja */
 }
