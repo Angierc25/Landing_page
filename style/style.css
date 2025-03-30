@@ -250,15 +250,18 @@ nav {
     gap: 20px; /* Espacio entre productos */
     padding: 20px;
     margin: 0 auto; /* Centra el contenedor horizontalmente */
-    margin-top: 30px; /* Margen superior */
+    margin-top: 100px; /* Margen superior */
     max-width: 1340px; /* Límite máximo de ancho */
 }
 
 .Productos-panes {
     border-radius: 15px; /* Bordes redondeados */
     text-align: center;
-    width: 30%; /* Tamaño más adecuado para 3 productos */
+    width: 30%; /* Tamaño adecuado para 3 productos */
     height: auto; /* Ajuste dinámico */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye imagen y texto equitativamente */
 }
 
 .Imagenes-panes {
@@ -288,13 +291,13 @@ nav {
     align-items: center;
     font-family: Arial, sans-serif;
     max-width: 380px; /* Límite máximo de ancho */
-    margin: 10px auto 0 auto; /* Centra el contenedor horizontalmente */
+    margin: auto; /* Centra el contenedor horizontalmente */
     cursor: default;
-    margin-top: 20px;
+    min-height: 60px; /* Asegura que todos tengan la misma altura */
 }
 
-.Nombre-panes h4 {
-    color: rgb(24, 24, 24);
+.Nombre-panes h4,
+.Precio-panes h4 {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 800; /* Negrita */
     font-style: normal;
@@ -303,10 +306,5 @@ nav {
 }
 
 .Precio-panes h4 {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 800; /* Negrita */
-    font-style: normal;
-    font-size: 20px;
-    line-height: 1;
     color: #8b4227bb; /* Color naranja */
 }
