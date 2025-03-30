@@ -163,6 +163,13 @@ nav {
         1px -1px 0 currentColor,
        -1px -1px 0 currentColor;
 }
+.imagen-panecillos{
+    transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+.imagen-panecillos:hover {
+    transform: scale(1.04); /* Efecto de aumento al pasar el mouse */
+    filter: brightness(1.1);
+}
 .articulo-destacado p{
     margin-top: 20px;
     font-size: 20px;
@@ -176,6 +183,11 @@ nav {
     margin-left: 360px;
     margin-top: -165px;
     position: absolute;
+    transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+.galletita-cost:hover {
+    transform: scale(1.04); /* Efecto de aumento al pasar el mouse */
+    filter: brightness(1.1);
 }
 .galletita-cost img {
     width: 90px; /* Ajusta según el tamaño deseado */
