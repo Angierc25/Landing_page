@@ -140,7 +140,7 @@ nav {
     align-items: center;
     margin: 0 auto; 
     max-width: 1100px; 
-    margin-top: 55px;
+    margin-top: 70px;
     margin-left: 445px;
 }
 .texto-contenedores{
@@ -228,4 +228,30 @@ nav {
     font-family: "Comic Neue";
     font-size: 20px;
     font-weight: bold;
+}
+
+
+
+.contenedor3{
+    display: flex;
+    justify-content: space-between; /* Espaciado uniforme */
+    gap: 0px; /* Espacio entre productos */
+    padding: 20px;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    margin-top: 60px; /* Margen superior */
+    max-width: 1340px; /
+}
+.product-panes {
+    border-radius: 15px; /* Bordes redondeados */
+    text-align: center;
+    width: 40%; /* Para que tres productos entren en una fila */
+    height: 500px;
+  }
+.Imagenes-panes{
+    transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ajusta según la imagen */
+    width: 40%;
 }
