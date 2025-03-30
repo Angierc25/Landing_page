@@ -290,10 +290,15 @@ nav {
     justify-content: space-between; /* Alinea el nombre y el precio */
     align-items: center;
     font-family: Arial, sans-serif;
-    max-width: 380px; /* Límite máximo de ancho */
+    max-width: 480px; /* Límite máximo de ancho */
     margin: auto; /* Centra el contenedor horizontalmente */
     cursor: default;
     min-height: 60px; /* Asegura que todos tengan la misma altura */
+    gap: 30px; /* Aumenta la separación entre el nombre y el precio */
+}
+
+.Precio-panes {
+    margin-left: auto; /* Mueve el precio hacia la derecha */
 }
 
 .Nombre-panes h4,
