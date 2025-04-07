@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -33,24 +34,24 @@
 
 
     <section class="bake">
-        <div class="cookies">
+        <div class="cookies" data-aos="fade-down" data-aos-duration="1000">
             <h1>HORNEA TUS GALLETAS</h1>
         </div>
         <div class="texto-container">
-            <div class="panes-artesanales"> 
+            <div class="panes-artesanales" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"> 
                 <p>cookies<br>irresistibles  <br>artesanales</p>   
             </div>
-            <div class="Definicion">
+            <div class="Definicion" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                 <p>¡Haz que cada bocado sea inolvidable! Descubre la receta secreta para <br>
                     las cookies perfectas comprando este libro virtual!
                 </p>
             </div>
-            <div class="ordenes">
+            <div class="ordenes" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="600">
                 <a href="#" class="order-button">COMPRAR AHORA</a>
             </div> 
         </div>
 
-        <div class="panecito">
+        <div class="panecito" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
             <img src="img/yuuuuu.png" alt="Panes">
         </div>
     </section>
@@ -208,6 +209,10 @@
                 telefonoInput.value = "";
             });
         });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 </body>
 
