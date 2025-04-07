@@ -97,7 +97,7 @@ nav {
 
 .texto-container {
     flex: 1;
-    margin-right: 890px;
+    margin-right: 580px;
 }
 .panes-artesanales p {
     font-size: 28px; 
@@ -129,12 +129,13 @@ nav {
 .panecito{
     display: inline-block;
     position: absolute;
-    margin-top: 150px;
-    margin-left: 650px;
+    margin-top: 180px;
+    margin-left: 700px;
 
 }
 .panecito img {
-    width: 490px; 
+    border-radius: 50px;
+    width: 450px; 
     height: auto;
 }
 
@@ -171,6 +172,12 @@ nav {
 }
 .imagen-panecillos{
     transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+
+.imagen-panecillos img{
+    margin-top: 85px;
+    width: 400px; 
+    height: auto;
 }
 .imagen-panecillos:hover {
     transform: scale(1.04); /* Efecto de aumento al pasar el mouse */
@@ -318,4 +325,161 @@ nav {
 
 .Precio-panes h4 {
     color: #8b4227bb; /* Color naranja */
+}
+
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 315px;
+    text-align: center;
+    position: relative;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+}
+
+.modal.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal.hide .modal-content {
+    transform: scale(0.9);
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 22px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #f7d438;
+    box-shadow: 0 0 5px rgba(247, 212, 56, 0.3);
+}
+
+.error-text {
+    color: #e74c3c;
+    font-size: 14px;
+    min-height: 20px;
+    margin: 10px 0;
+}
+
+.modal-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    flex: 1;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.btns {
+    background-color: rgb(109, 109, 109);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 135px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 22px;
+    letter-spacing: 1px; /* Espaciado entre letras */
+    transition: ease 0.2s;
+  }
+
+  /* Botón de enviar (verde, estilo WhatsApp) */
+  .btnsd {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 135px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 22px;
+    letter-spacing: 1px;
+    transition: ease 0.2s;
+  }
+
+  /* Efecto hover para los botones */
+  .btns:hover {
+    background-color: rgb(77, 77, 77); /* Oscurece el botón de cerrar */
+  }
+
+  .btnsd:hover {
+    background-color: rgb(233, 200, 15); /* Oscurece el botón de enviar */
+  }
+.btn:active {
+    transform: scale(0.97);
+}
+
+.btn-cancel {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.btn-cancel:hover {
+    background: #d0d0d0;
+}
+
+.btn-submit {
+    background: #f7d438;
+    color: #333;
+}
+
+.btn-submit:hover {
+    background: #f1c913;
 }

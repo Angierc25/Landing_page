@@ -18,14 +18,14 @@
             <div class="nav-container">
                 <ul class="nav-links">
                     <li><a href="#">NOSOTROS</a></li>
-                    <li><a href="#">TIENDA</a></li>
+                    <li><a href="#">LIBRO</a></li>
                     <li><a href="#">CONTACTO</a></li>
                 </ul>
             </div>
             <div class="compra-ya">
-                <a href="#"> COMPRA YA !</a>
+                <a href="#" class="btn-watts"> COMPRA YA !</a>
                 <div class="wattpas">
-                    <img src="img/wattsap.png" alt="WhatsApp">
+                    <img src="img/wattsap.png" alt="WhatsApp" >
                 </div>
             </div>
         </nav>
@@ -38,10 +38,12 @@
         </div>
         <div class="texto-container">
             <div class="panes-artesanales"> 
-                <p>PAN Y <br>GALLETAS <br>ARTESANALES</p>   
+                <p>cookies<br>irresistibles  <br>artesanales</p>   
             </div>
             <div class="Definicion">
-                <p>¡Estamos literalmente obsesionados <br>con dar más de lo que te gusta!</p>
+                <p>¡Haz que cada bocado sea inolvidable! Descubre la receta secreta para <br>
+                    las cookies perfectas comprando este libro virtual!
+                </p>
             </div>
             <div class="ordenes">
                 <a href="#" class="order-button">COMPRAR AHORA</a>
@@ -49,14 +51,14 @@
         </div>
 
         <div class="panecito">
-            <img src="img/pancito.png" alt="Panes">
+            <img src="img/yuuuuu.png" alt="Panes">
         </div>
     </section>
 
 
     <section class="contenedor2">
         <div class="imagen-panecillos">
-            <img src="img/panecillos.png" alt="Cesta de Panes">
+            <img src="img/varietys.jpg" alt="Cesta de Panes">
         </div>
         
         <div class="textos-contenedores">
@@ -71,23 +73,21 @@
             </div>
             <div class="trio-pancillo">
                 <div class="pan-bagel">
-                    <img src="img/bagel.png" alt="Panecillos de Bagel">
+                    <img src="img/kises.png" alt="Panecillos de Bagel">
                 </div>
                 <div class="Bagel-pan">
-                    <h3>Pan de Bagel</h3>   
-                    <p>Libre de Gluten</p>
+                    <h3>Galleta de Chocolate</h3>   
+                    <p>Dulce y encantador</p>
                 </div>
                 <div class="raya ">
                     <p>|</p>
                 </div>
                 <div class="costo-bagel">
-                    <p>S/2.50</p>
+                    <p>S/12.50</p>
                 </div>
             </div>
             <div class="Concepto-babe">
-                <p>Todas las galletas deberían tener un espectacular pastel <br>
-                    de chocolate alemán en su repertorio, y este es uno <br>
-                    de nuestros favoritos</p>
+                <p>Descubre cómo disfrutar de unas deliciosas galletas de chocolate con chips que no solo conquistan tu paladar, ¡sino que también son saludables! Este libro es la guía perfecta para hornear con amor y cuidado. </p>
             </div>
         </div>
     </section>
@@ -100,10 +100,10 @@
             </div>
             <div class="Descption">
                 <div class="Nombre-panes">
-                    <h4>BAGEL CON SEMILLAS</h4>
+                    <h4>RELLENO</h4>
                 </div>
                 <div class="Precio-panes">
-                    <h4>S/5.50</h4>
+                    <h4>CREMOSO</h4>
                 </div>
 
             </div>
@@ -114,10 +114,10 @@
             </div>
             <div class="Descption">
                 <div class="Nombre-panes">
-                    <h4>REBANADA DE PAN</h4>
+                    <h4>ESPONJOSO</h4>
                 </div>
                 <div class="Precio-panes">
-                    <h4>S/2.50</h4>
+                    <h4>DELICIOSO</h4>
                 </div>
 
             </div>
@@ -129,10 +129,10 @@
             </div>
             <div class="Descption">
                 <div class="Nombre-panes">
-                    <h4>GALLETAS DE GLUCOSA</h4>
+                    <h4>CRUJIENTE</h4>
                 </div>
                 <div class="Precio-panes">
-                    <h4>S/2.50</h4>
+                    <h4>DORADITA</h4>
                 </div>
 
             </div>
@@ -141,7 +141,74 @@
         
 
     </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal hide">
+        <div class="modal-content">
+            <h2>¡Queremos ayudarte!</h2>
+            <input type="text" id="nombre" placeholder="Tu nombre" required>
+            <input type="tel" id="telefono" placeholder="Tu teléfono" required>
+            <p id="errorMensaje" class="error-text"></p>
+            <div class="modal-footer">
+                <button class="btns" id="close">CERRAR</button>
+                <button  class="btnsd" id="enviarBtn">ENVIAR</button>
+            </div>
+        </div>
+    </div>
     
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const modal = document.getElementById("modal");
+            const btn = document.querySelector(".btn-watts");
+            const closeBtn = document.getElementById("close");
+            const enviarBtn = document.getElementById("enviarBtn");
+            const nombreInput = document.getElementById("nombre");
+            const telefonoInput = document.getElementById("telefono");
+            const errorMensaje = document.getElementById("errorMensaje");
+            const whatsappIcon = document.querySelector(".wattpas img"); // Cambiado para seleccionar la imagen correcta
     
+            function openModal(event) {
+                event.preventDefault();
+                modal.classList.remove("hide");
+                modal.classList.add("show");
+                errorMensaje.style.display = "none";
+            }
+    
+            // Abrir modal al hacer clic en "COMPRA YA" o el ícono de WhatsApp
+            btn.addEventListener("click", openModal);
+            whatsappIcon.addEventListener("click", openModal); // Usando la selección corregida
+    
+            // Cerrar modal
+            closeBtn.addEventListener("click", () => {
+                modal.classList.remove("show");
+                modal.classList.add("hide");
+            });
+    
+            // Enviar datos a WhatsApp
+            enviarBtn.addEventListener("click", (event) => {
+                event.preventDefault(); // Previene el comportamiento por defecto del botón
+    
+                const nombre = nombreInput.value.trim();
+                const telefono = telefonoInput.value.trim();
+    
+                if (nombre === "" || telefono === "") {
+                    errorMensaje.textContent = "Por favor, ingresa tu nombre y teléfono.";
+                    errorMensaje.style.display = "block";
+                    return;
+                }
+    
+                const mensaje = `¡Hola! Soy ${nombre} y estoy interesad@ en los deliciosos productos de ROLLIN. \n\nMi número de contacto es: ${telefono}. \n\nMe encantaría recibir información sobre cómo realizar mi pedido. ¡Gracias!`;
+                const whatsappUrl = `https://wa.me/51997039226?text=${encodeURIComponent(mensaje)}`; // Número corregido
+                window.open(whatsappUrl, "_blank");
+    
+                // Cierra el modal y limpia los campos
+                modal.classList.remove("show");
+                modal.classList.add("hide");
+                nombreInput.value = "";
+                telefonoInput.value = "";
+            });
+        });
+    </script>
 </body>
+
 </html>
