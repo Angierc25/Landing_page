@@ -4,9 +4,9 @@
 
 Este repositorio contiene el código fuente para la landing page de Rollin...
 
-## Enlace del proyecto en Github Page
+## Enlace del proyecto en Github Page 🌐
 Puedes acceder al proyecto a través del siguiente enlace:  
-[Visita mi Pagina](https://angierc25.github.io/Landing_page/)
+👇[Visita mi Pagina](https://angierc25.github.io/Landing_page/)
 
 
 ## Características ✨
@@ -34,9 +34,11 @@ Landing Page/
 
 ## Desarrollo actual de la pagina ✅
 
-    ###Inicio
-    ![Captura de la página web](/img/avance1.png)
-    ###Contenido
-    ![Captura de la página web](/img/avance2.png)
-    ###Final
-    ![Captura de la página web](/img/avance3.png)
+### Inicio
+![Captura de la página web](img/avance1.png)
+
+### Contenido
+![Captura de la página web](img/avance2.png)
+
+### Final
+![Captura de la página web](img/avance3.png)
